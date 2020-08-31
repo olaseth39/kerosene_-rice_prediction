@@ -1,1 +1,1 @@
-# kerosene_-rice_prediction
+# kerosene_price_prediction
