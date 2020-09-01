@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kerosene Price Prediction</title>
+</head>
+    <title>Kerosene Price Prediction</title>
+    <script src="/client/js/jquery.min.js"></script>
+    <script src="/client/js/app.js"></script>
+    <link rel="stylesheet" href="/client/css/app.css">
+    <link rel="stylesheet" href="/client/css/googleapisfonts.css">
+<body>
+    <div class="img"></div>
+    <h3>Prediction of Nigerian Household Kerosene Price per Liter on Monthly and Yearly basis</h3>
+    <form class="form">
+        <h2>Year</h2>
+        <input class="area"  type="text" id="year" class="floatLabel" name="Squareft" value="2015">
+    </form>
+
+    <form class="form">
+        <h2>Month</h2>
+        <div>
+            <select class="location" name="" id="month">
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Jan</option>
+                <option>Feb</option>
+            </select>
+        </div>
+
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+    </form>
+</body>
+</html>
+
