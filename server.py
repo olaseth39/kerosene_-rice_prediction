@@ -1,10 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import util
 
 app = Flask(__name__)
 
-# to get all the the month
+@app.route("/")
+def home():
+    return render_template('app.html')
 
+# to get all the the month
 
 @app.route("/month_names")
 def get_month_names():
